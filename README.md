@@ -17,8 +17,9 @@ To compile from source you will need to install Go-Raylib and the required depen
 Installation instructions are on the Go-Raylib page https://github.com/gen2brain/raylib-go
 
 
-if you need help with Raylib then Discord is the best choice https://discord.gg/raylib otherwise Reddit https://www.reddit.com/r/raylib
+If you need help with Raylib then Discord is the best choice https://discord.gg/raylib otherwise Reddit https://www.reddit.com/r/raylib
 
+*All assets used are credited in the text file in the etc/ folder - please support indie game art*
     
 **GAMEPLAY**
 
