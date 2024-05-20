@@ -4822,9 +4822,12 @@ func savesettings() { //MARK:SAVE SETTINGS
 		settingsTXT = settingsTXT + "0"
 	}
 
-	f.WriteString(settingsTXT)
-
+	_, err = f.WriteString(settingsTXT)
+	if err != nil {
+		fmt.Printf("Failed to write settings: %s", err)
+	}
 }
+
 func addtime() { //MARK:ADD TIME
 
 	totaltime := minsEND*60 + secsEND
@@ -4923,9 +4926,12 @@ func savetimes() { //MARK: SAVE TIMES
 		}
 	}
 
-	f.WriteString(scoresTXT)
-
+	_, err = f.WriteString(scoresTXT)
+	if err != nil {
+		fmt.Printf("Failed to write times: %s", err)
+	}
 }
+
 func exitgame() { //MARK: EXIT GAME
 
 	if optionsChange {
